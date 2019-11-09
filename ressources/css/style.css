@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../font-awesome/webfonts/fa-solid-900.ttf");
+}
+@font-face {
+    font-family: "FontAwesome2";
+    src: url("../font-awesome/webfonts/fa-brands-400.ttf");
+}
+@font-face {
+    font-family: "FontAwesome3";
+    src: url("../font-awesome/webfonts/fa-regular-400.ttf");
+}
+
+
+:root {
+    --bg_baniere: url("../img/background.jpg");
+}
+
+/* Bare de navigation */
+.navbar-brand img, .logo {
+    max-width: 32px;
+    height: auto;
+}
+
+/* Baniere */
+/* List of available "baniere" */
+.baniere#mes-resultats {
+    --bg_baniere: url("../img/mes-resultats-bg.jpg");
+}
+.baniere#mes-projets {
+    --bg_baniere: url("../img/mes-projets-bg.jpg");
+}
+
+.baniere {
+    width: 100%;
+    height: 180px;
+    background-image: var(--bg_baniere);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.baniere > .baniere-texte {
+    height: inherit;
+    width: inherit;
+}
+
+.baniere > .baniere-texte {
+    background-color: rgba(52, 58, 64, .5);   
+}
+
+.baniere-texte h1,
+.baniere-texte h2,
+.baniere-texte h3,
+.baniere-texte h4,
+.baniere-texte h5,
+.baniere-texte h6,
+.baniere-texte p {
+    position: relative;
+    top: 40%;
+}
+
+/* Bas de page */
+footer#basPage {
+    margin-top: 15px;
+    padding: 15px 0 15px;
+    min-height: 80px;
+}
+
+footer#basPage a:link{
+    text-decoration: none;
+}
+
+/* General */
+a {
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+div.container#pageContent {
+    min-height: 65vh;
+}
+
+.title {
+    padding-bottom: 9px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.points-positifs > li::before,
+.points-negatifs > li::before,
+.liste-projet > li::before {
+    font-family: "FontAwesome", sans-serif; 
+    margin-right: 5px;
+}
+.points-positifs > li::before {
+    content: "\f067";
+    color: rgba(40, 121, 75, .6);
+}
+.points-negatifs > li::before {
+    content: "\f068";
+    color: rgba(159, 17, 42, .6);
+}
+.liste-projet > li::before {
+    content: "\f105";
+    color: rgba(52, 58, 64, .8);
+}
+
+/* Hobbies - Groupe */
+details > summary:first-of-type {
+    list-style-type: none;
+}
+details > summary img {
+    width: 100%;
+    max-height: 200px;
+}
+details > .card {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}

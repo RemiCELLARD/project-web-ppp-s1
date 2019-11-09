@@ -1,0 +1,58 @@
+*{
+	-webkit-transition: all .1s;
+	-moz-transition: all .1s;
+	transition: all .1s;
+}
+
+body, html {
+    height: 100%;
+    background: linear-gradient(to bottom, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+    /*background:linear-gradient(141deg, rgb(18, 168, 227) 0%, rgb(46, 182, 236) 51%, rgb(44,181,232) 75%);*/
+}
+.rc-center {
+	min-height: 100vh;
+}
+
+.title {
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.75);
+}
+#desc {
+	display: inline;
+}
+
+.box-shad {
+	background-image: url('../img/profil.jpg');
+	background-size: 128px 128px;
+	background-repeat: no-repeat;
+	height: 128px;
+	width: 128px;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.65);
+    -moz-box-shadow: inset 0 0 2px rgba(0,0,0,.65);
+    box-shadow: inset 0 0 2px rgba(0,0,0,.65);
+}
+
+
+.box-shad > div {
+	font-size: 13px;
+	font-weight: bold;
+	opacity: 0;
+	position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box-shad:hover {
+    -webkit-box-shadow: inset 0 0 84px rgba(0,0,0,.65);
+    -moz-box-shadow: inset 0 0 84px rgba(0,0,0,.65);
+    box-shadow: inset 0 0 84px rgba(0,0,0,.65);
+}
+.box-shad:hover > div {
+	opacity: 1;
+}
+
